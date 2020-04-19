@@ -1,0 +1,12 @@
+.gradle/
+*.iml
+build/
+classes/
+logs/
+out/
+target/
+
+# intellij
+.idea/
+.idea/**
+.idea/**/libraries
