@@ -45,6 +45,12 @@ public class IpHelper {
         return ipTree.findIp(ip);
     }
 
+    public static String findRegionByIp(String ip, IPAddress.Type type) {
+        IPAddress ipAddress = IPAddress.createIPAddress(ip, type);
+
+        return ipTree.findIp(ipAddress.getIpv4String());
+    }
+
     public static List<IpRelation> getIpRelation() throws Exception {
 
         // <ipCode, province>
